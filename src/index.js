@@ -1,10 +1,10 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
 import './index.css';
-import CardList from './CardList';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import { robots } from './robots';
+
 
 // const root = createRoot('root');
 // root.render(
@@ -18,7 +18,7 @@ document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <CardList robots={robots}/>
+    <App />
   </React.StrictMode>,
 );
 
